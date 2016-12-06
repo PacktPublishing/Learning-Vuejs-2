@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js - Bower Installation</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+  </div>
+  <script src="bower_components/vue/dist/vue.js"></script>
+  <script>
+    var data = {
+      message: "Learning Vue.js"
+    };
+
+    new Vue({
+      el: "#app",
+      data: data
+    });
+  </script>
+</body>
+</html>

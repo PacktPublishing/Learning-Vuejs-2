@@ -1,0 +1,40 @@
+{
+  "shoppinglists": [
+    {
+      "title": "Groceries",
+      "items": [
+        {
+          "text": "Apples",
+          "checked": false
+        },
+        {
+          "text": "Oranges",
+          "checked": false
+        },
+        {
+          "text": "Sausages",
+          "checked": true
+        }
+      ],
+      "id": 10
+    },
+    {
+      "title": "Clothes",
+      "items": [
+        {
+          "text": "Dress",
+          "checked": false
+        },
+        {
+          "text": "All stars",
+          "checked": false
+        },
+        {
+          "text": "Bikini",
+          "checked": false
+        }
+      ],
+      "id": 12
+    }
+  ]
+}

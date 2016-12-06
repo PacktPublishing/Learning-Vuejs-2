@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping List</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+    .container {
+      width: 40%;
+      margin: 20px auto 0px auto;
+    }
+
+    .removed label {
+      text-decoration: line-through;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+
+    ul li span {
+      margin-left: 5px;
+    }
+
+    .footer {
+      font-size: 0.7em;
+      margin-top: 20vh;
+    }
+  </style>
+</head>
+<body>
+<div id="app" class="container">
+  <h2>{{ title }}</h2>
+  <div class="input-group">
+    <input v-model="newItem" @keyup.enter="addItem" placeholder="add shopping list item" type="text"
+           class="form-control">
+    <span class="input-group-btn">
+      <button @click="addItem" class="btn btn-default" type="button">Add!</button>
+    </span>
+  </div>
+  <ul>
+    <li v-for="item in items" :class="{ 'removed': item.checked }">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" v-model="item.checked"> {{ item.text }}
+        </label>
+      </div>
+    </li>
+  </ul>
+  <div class="footer">
+    <hr/>
+    <em>Change the title of your shopping list here</em>
+    <input v-model="title"/>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

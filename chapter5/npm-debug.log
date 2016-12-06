@@ -1,0 +1,21 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.2
+4 verbose readDependencies loading dependencies from /Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter5/package.json
+5 error install Couldn't read dependencies
+6 verbose stack Error: ENOENT: no such file or directory, open '/Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter5/package.json'
+6 verbose stack     at Error (native)
+7 verbose cwd /Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter5
+8 error Darwin 15.5.0
+9 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+10 error node v4.3.2
+11 error npm  v2.14.12
+12 error path /Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter5/package.json
+13 error code ENOPACKAGEJSON
+14 error errno -2
+15 error syscall open
+16 error package.json ENOENT: no such file or directory, open '/Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter5/package.json'
+16 error package.json This is most likely not a problem with npm itself.
+16 error package.json npm can't find a package.json file in your current directory.
+17 verbose exit [ -2, true ]

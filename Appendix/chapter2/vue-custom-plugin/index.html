@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js - Custom Plugin</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+    #app {
+      width: 60%;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <input v-model="item"/>
+    <hr>
+    <div><strong>Square:</strong> <span v-square="item"></span></div>
+    <div><strong>Root:</strong> <span v-sqrt="item"></span></div>
+    <div><strong>Sine:</strong> <span v-sin="item"></span></div>
+    <div><strong>Cosine:</strong> <span v-cos="item"></span></div>
+    <div><strong>Tangent:</strong> <span v-tan="item"></span></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping List</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+    .container {
+      width: 40%;
+      margin: 20px auto 0px auto;
+    }
+
+    .removed {
+      color: gray;
+    }
+
+    .removed label {
+      text-decoration: line-through;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+
+    .footer {
+      font-size: 0.7em;
+      margin-top: 20vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>My Shopping List</h2>
+    <div class="input-group">
+      <input placeholder="add shopping list item" type="text" class="js-new-item form-control">
+      <span class="input-group-btn">
+        <button @click="addItem" class="js-add btn btn-default" type="button">Add!</button>
+      </span>
+    </div>
+    <ul>
+      <li>
+        <div class="checkbox">
+          <label>
+            <input class="js-item" name="list" type="checkbox"> Carrot
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox">
+          <label>
+            <input class="js-item" name="list" type="checkbox"> Book
+          </label>
+        </div>
+      </li>
+      <li class="removed">
+        <div class="checkbox">
+          <label>
+            <input class="js-item" name="list" type="checkbox" checked> Gift for aunt's birthday
+          </label>
+        </div>
+      </li>
+    </ul>
+    <div class="footer">
+      <hr/>
+      <em>Change the title of your shopping list here</em>
+      <input class="js-change-title" type="text" value="My Shopping List">
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    /**
+     * Add button click handler
+     */
+    function onAdd() {
+      var $ul, li, $li, $label, $div, value;
+
+      value = $('.js-new-item').val();
+      //validate against empty values
+      if (value === '') {
+        return;
+      }
+      $ul = $('ul');
+      $li = $('<li>').appendTo($ul);
+      $div = $('<div>')
+          .addClass('checkbox')
+          .appendTo($li);
+      $label = $('<label>').appendTo($div);
+      $('<input>')
+          .attr('type', 'checkbox')
+          .addClass('item')
+          .attr('name', 'list')
+          .click(toggleRemoved)
+          .appendTo($label);
+      $label
+          .append(value);
+      $('.js-new-item').val('');
+    }
+
+    /**
+     * Checkbox click handler - toggles class removed on li parent element
+     * @param ev
+     */
+    function toggleRemoved(ev) {
+      var $el;
+
+      $el = $(ev.currentTarget);
+      $el.closest('li').toggleClass('removed');
+    }
+
+    function onChangeTitle() {
+      $('h2').text($('.js-change-title').val());
+    }
+
+    $('.js-add').click(onAdd);
+    $('.js-item').click(toggleRemoved);
+    $('.js-change-title').keyup(onChangeTitle);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Volumes/Users/chudaol/.nvm/versions/node/v5.11.0/bin/node',
+1 verbose cli   '/Volumes/Users/chudaol/.nvm/versions/node/v5.11.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test' ]
+2 info using npm@3.8.6
+3 info using node@v5.11.0
+4 verbose stack Error: ENOENT: no such file or directory, open '/Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter7/package.json'
+4 verbose stack     at Error (native)
+5 verbose cwd /Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter7
+6 error Darwin 15.5.0
+7 error argv "/Volumes/Users/chudaol/.nvm/versions/node/v5.11.0/bin/node" "/Volumes/Users/chudaol/.nvm/versions/node/v5.11.0/bin/npm" "run" "test"
+8 error node v5.11.0
+9 error npm  v3.8.6
+10 error path /Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter7/package.json
+11 error code ENOENT
+12 error errno -2
+13 error syscall open
+14 error enoent ENOENT: no such file or directory, open '/Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter7/package.json'
+15 error enoent ENOENT: no such file or directory, open '/Volumes/Users/chudaol/Projects/LearningVueJs/code/chapter7/package.json'
+15 error enoent This is most likely not a problem with npm itself
+15 error enoent and is related to npm not being able to find a file.
+16 verbose exit [ -2, true ]

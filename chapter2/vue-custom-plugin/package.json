@@ -1,0 +1,13 @@
+{
+  "name": "vue-custom-plugin",
+  "scripts": {
+    "build": "browserify script.js -o main.js -t [ babelify --presets [ es2015 ] ]"
+  },
+  "version": "0.0.1",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "vue": "^2.0.3"
+  }
+}
