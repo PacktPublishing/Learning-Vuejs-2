@@ -1,0 +1,38 @@
+{
+  "shoppinglists": [
+    {
+      "title": "news",
+      "items": [
+        {
+          "text": "asd",
+          "checked": true
+        },
+        {
+          "text": "hkhjkj",
+          "checked": true
+        }
+      ],
+      "id": "1"
+    },
+    {
+      "title": "MERDA",
+      "items": [],
+      "id": 3
+    },
+    {
+      "title": "MERDA",
+      "items": [],
+      "id": 4
+    },
+    {
+      "title": "New Shopping List",
+      "items": [],
+      "id": 5
+    },
+    {
+      "title": "New Shopping List",
+      "items": [],
+      "id": 6
+    }
+  ]
+}
