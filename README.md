@@ -19,9 +19,9 @@ export default {
 ```
 
 The requirements for this book are the following:
-Computer with an Internet connection
-Text editor/IDE
-Node.js
+* Computer with an Internet connection
+* Text editor/IDE
+* Node.js
 
 ##Related Products
 
