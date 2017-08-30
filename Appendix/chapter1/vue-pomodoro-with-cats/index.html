@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="well" :class="{ 'hidden': pomodoroState === 'work' }">
-    <img :src="'http://thecatapi.com/api/images/get?type=gif&size=med&ts=' + timestamp" />
+    <img :src="catImgSrc" />
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
