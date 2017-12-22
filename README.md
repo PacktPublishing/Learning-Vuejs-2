@@ -1,4 +1,4 @@
-#Learning Vue.js 2
+## Learning Vue.js 2
 This is the code repository for [Learning Vue.js 2](https://www.packtpub.com/web-development/learning-vuejs-2?utm_source=github&utm_medium=repository&utm_campaign=9781786469946), published by [Packt](https://www.packtpub.com/). It contains all the supporting project files necessary to work through the book from start to finish.
 ## About the Book
 Vue.js is one of the latest new frameworks to have piqued the interest of web developers due to its reactivity, reusable components, and ease of use.
