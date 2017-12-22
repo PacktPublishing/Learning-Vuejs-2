@@ -7,7 +7,7 @@ This book shows developers how to leverage its features to build high-performing
 You will start by building a simple application in Vue.js which will let you observe its features 
 
 
-##Instructions and Navigations
+## Instructions and Navigations
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
 
 
@@ -30,11 +30,10 @@ The requirements for this book are the following:
 * Text editor/IDE
 * Node.js
 
-##Related Products
+## Related Products
 
 * [The Majesty Of Vue.js](https://www.packtpub.com/web-development/majesty-vuejs?utm_source=github&utm_medium=repository&utm_campaign=9781787124370)
 
 * [Learning Construct 2](https://www.packtpub.com/game-development/learning-construct-2?utm_source=github&utm_medium=repository&utm_campaign=9781784397678)
 
-###Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
+
